@@ -40,7 +40,14 @@
 - Design levels with increasing complexity and will introduce new obstacles and challenges as the player advances.
 
 - Create narrow passages, moving platforms, and tight spaces to add difficulty and test the player's agility.
-
+---
+### **_Pseudocode_**
+-creating a dpad movement
+-adding a gamepad feature
+-using a canvas to make the game in one place
+-for the speed powerup I will use velocity 
+-the rest i will figure it out :D
+---
 ### **_Credits_**
 
 ##### ~Yet to be determined
