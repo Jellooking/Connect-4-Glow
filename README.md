@@ -42,11 +42,11 @@
 - Create narrow passages, moving platforms, and tight spaces to add difficulty and test the player's agility.
 ---
 ### **_Pseudocode_**
--creating a dpad movement
--adding a gamepad feature
--using a canvas to make the game in one place
--for the speed powerup I will use velocity 
--the rest i will figure it out :D
+- Creating a dpad movement
+- Adding a gamepad feature
+- Using a canvas to make the game in one place
+- For the speed powerup I will use velocity 
+- The rest i will figure it out :D
 ---
 ### **_Credits_**
 
