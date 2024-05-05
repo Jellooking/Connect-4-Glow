@@ -43,7 +43,7 @@ boardContainer.addEventListener('click', function (event) {
 function isValidMove(row, col) {
   return board[row][col] === ''
 }
-// Win condition checking all 4 directions
+//Win condition checking all 4 directions
 function checkWin(row, col) {
   const directions = [
     { x: 0, y: 1 }, // Horizontal
@@ -53,7 +53,7 @@ function checkWin(row, col) {
   ]
   for (const direction of directions) {
     let count = 1
-    // check direction
+    //check direction
     for (let i = 1; i <= 3; i++) {
       const newRow = row + i * direction.y
       const newCol = col + i * direction.x
@@ -72,6 +72,21 @@ function checkWin(row, col) {
         return true
       }
     }
+  }
+  //Check consecutive cells horizontally
+  let horizontalCount = 1
+  let leftCol = col - 1
+  let rightCol = col + 1
+  while (leftCol >= 0 && board[row][leftCol] === currentPlayer) {
+    horizontalCount++
+    leftCol--
+  }
+  while (rightCol < COLS && board[row][rightCol] === currentPlayer) {
+    horizontalCount++
+    rightCol++
+  }
+  if (horizontalCount >= 4) {
+    return true
   }
   return false
 }
