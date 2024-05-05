@@ -2,6 +2,7 @@ const ROWS = 6
 const COLS = 7
 let currentPlayer = 'red'
 let board = []
+
 // The game board
 const boardContainer = document.querySelector('.board')
 for (let row = 0; row < ROWS; row++) {
@@ -13,21 +14,25 @@ for (let row = 0; row < ROWS; row++) {
     boardContainer.appendChild(cell)
   }
 }
-// board array
+
+// Initialize the board array
 for (let row = 0; row < ROWS; row++) {
   board[row] = []
   for (let col = 0; col < COLS; col++) {
     board[row][col] = ''
   }
 }
-// click function
+
+// Click event listener
 boardContainer.addEventListener('click', function (event) {
   const cell = event.target
   const row = parseInt(cell.dataset.row)
   const col = parseInt(cell.dataset.col)
+
   if (isValidMove(row, col)) {
     board[row][col] = currentPlayer
     cell.classList.add(currentPlayer)
+
     if (checkWin(row, col)) {
       alert(currentPlayer + ' wins!')
       resetBoard()
@@ -39,11 +44,13 @@ boardContainer.addEventListener('click', function (event) {
     }
   }
 })
-// Check if there is a valid move
+
+// Check if a move is valid
 function isValidMove(row, col) {
   return board[row][col] === ''
 }
-//Win condition checking all 4 directions
+
+// Check for winning conditions
 function checkWin(row, col) {
   const directions = [
     { x: 0, y: 1 }, // Horizontal
@@ -51,12 +58,14 @@ function checkWin(row, col) {
     { x: 1, y: 1 }, // Top right to bottom left (Diagonal)
     { x: 1, y: -1 } // Top left to bottom right (Diagonal)
   ]
+
   for (const direction of directions) {
     let count = 1
-    //check direction
+
     for (let i = 1; i <= 3; i++) {
       const newRow = row + i * direction.y
       const newCol = col + i * direction.x
+
       if (
         newRow >= 0 &&
         newRow < ROWS &&
@@ -68,29 +77,36 @@ function checkWin(row, col) {
       } else {
         break
       }
+
       if (count === 4) {
         return true
       }
     }
   }
-  //Check consecutive cells horizontally
+
+  // Check consecutive cells horizontally
   let horizontalCount = 1
   let leftCol = col - 1
   let rightCol = col + 1
+
   while (leftCol >= 0 && board[row][leftCol] === currentPlayer) {
     horizontalCount++
     leftCol--
   }
+
   while (rightCol < COLS && board[row][rightCol] === currentPlayer) {
     horizontalCount++
     rightCol++
   }
+
   if (horizontalCount >= 4) {
     return true
   }
+
   return false
 }
-// Draw condition
+
+// Check for a draw condition
 function checkDraw() {
   for (let row = 0; row < ROWS; row++) {
     for (let col = 0; col < COLS; col++) {
@@ -99,15 +115,18 @@ function checkDraw() {
       }
     }
   }
+
   return true
 }
-// Reset
-// need to add an option :D
+
+// Reset the game board
 function resetBoard() {
   board = board.map((row) => row.map(() => ''))
   const cells = document.querySelectorAll('.cell')
+
   for (const cell of cells) {
     cell.className = 'cell'
   }
+
   currentPlayer = 'red'
 }
