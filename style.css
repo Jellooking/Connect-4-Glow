@@ -1,0 +1,24 @@
+.board {
+  display: flex;
+  flex-wrap: wrap;
+  width: 420px;
+}
+
+.cell {
+  width: 60px;
+  height: 60px;
+  background-color: #f2f2f2;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.cell.red {
+  background-color: #ff4136;
+}
+
+.cell.yellow {
+  background-color: #ffdc00;
+}
