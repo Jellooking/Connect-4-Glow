@@ -1,22 +1,45 @@
 .board {
   display: flex;
   flex-wrap: wrap;
-  width: 420px;
+  width: 560px;
+  margin: 0 auto;
+  margin-top: 50px;
+}
+
+.column {
+  display: flex;
+  flex-direction: column-reverse;
 }
 
 .cell {
-  width: 60px;
-  height: 60px;
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: center;
+  align-items: center;
+  width: 80px;
+  height: 80px;
   background-color: #f2f2f2;
+  border-radius: 50%;
   border: 1px solid #ccc;
   box-sizing: border-box;
   cursor: pointer;
+  background-size: cover; /* Added to adjust image size */
+  background-position: center; /* Added to center the image */
 }
 
 .cell.red {
-  background-color: #ff4136;
+  background-image: url('https://media.discordapp.net/attachments/852994610950832140/1236756762611159242/tritri.png?ex=66392afe&is=6637d97e&hm=339a7090c92bcfc4b7d5d6f29d6409a9ca36cf8c91ab18a586e227fdcb4df4c5&=&format=webp&quality=lossless&width=135&height=135');
 }
 
 .cell.yellow {
-  background-color: #ffdc00;
+  background-image: url('https://media.discordapp.net/attachments/852994610950832140/1236756763181580318/image.png?ex=66392afe&is=6637d97e&hm=3edb93dfea2bf72573572592df8623302eae6f5e8ebfd7a07af2adf96846d9f1&=&format=webp&quality=lossless&width=135&height=135');
+}
+
+@keyframes fall {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(0);
+  }
 }
