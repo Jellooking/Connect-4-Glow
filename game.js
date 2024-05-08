@@ -146,7 +146,7 @@ function updateScoreboard() {
   player2ScoreElement.textContent = `Player 2: ${player2Score}`
 }
 
-// A veru
+// so its in the name lmao :D
 function handleClick(row, col) {
   // Checks for avalability in columns
   if (boardArray[0][col] !== 0) {
