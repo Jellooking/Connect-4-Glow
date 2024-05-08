@@ -1,12 +1,20 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Korean Survival Game</title>
-  <link rel="stylesheet" type="text/css" href="style.css">
+  <title>Connect 4</title>
+  <link rel="stylesheet" href="style.css">
   <script defer src="game.js"></script>
 </head>
 <body>
-    <h1>Bit-Connect 4</h1>
-    <div class="board"></div>
+    <h1>Connect 4</h1>
+    <div id="game">
+      <div id="board"></div>
+      <div id="message"></div>
+      <button id="reset-button">Reset</button>
+    </div>
+    <div id="scoreboard">
+      <div id="player1-score">Player 1: 0</div>
+      <div id="player2-score">Player 2: 0</div>
+    </div>
   </body>
 </html>
