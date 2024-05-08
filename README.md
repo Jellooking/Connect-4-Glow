@@ -12,44 +12,35 @@
 
 ### **_Objective_**
 
-####  Guide the jello through a hazardous environment filled with obstacles and keep it alive for as long as possible.
+####  First to connect 4 wins
 ---
 
 ### **_Gameplay_**
 
-- Controls: Use the arrow keys or mouse to move the jello.
-- Obstacles: The game world is filled with various obstacles such as spikes, moving platforms, falling objects, and enemies. The jello must avoid touching these obstacles to survive.
- - Power-ups: Occasionally, power-ups like speed boosts or temporary invincibility can appear to help the jello navigate through difficult sections.
- - Scoring: The score increases as the jello survives longer. Considering to implement a leaderboard to encourage competition among players :D.
-- Difficulty: The game can gradually increase in difficulty by introducing faster obstacles or more complex level designs as the player progresses.
-
-
+- Click on the column to place a tile
+- Challenge your opponent to connect 4 tokens first
 ---
 
 ### **_Visuals and Audio_**
 
-- Visuals: Use colorful and vibrant graphics to depict the jello and the environment. Considering to use different themes or backgrounds to add variety.
-
-- Audio: Will background music that matches the game's theme and sound effects for actions like jumping, collecting power-ups, or colliding with obstacles.
+- Visuals: Simple and Clean 
 
 ---
 
 ### **_Level Design_**
 
-- Design levels with increasing complexity and will introduce new obstacles and challenges as the player advances.
+- Glowing
+- Dark themed
 
-- Create narrow passages, moving platforms, and tight spaces to add difficulty and test the player's agility.
 ---
 ### **_Pseudocode_**
-- Creating a dpad movement
-- Adding a gamepad feature
-- Using a canvas to make the game in one place
-- For the speed powerup I will use velocity 
-- The rest i will figure it out :D
+- Placing tiles by a single click
+- Player score that escalates 
+- A slick looking border
 ---
 ### **_Credits_**
 
-##### ~Yet to be determined
-#### no promises cause I might change a lot lol
-
+##### [Glowing Connect](https://codemyui.com/flickering-light-text-animation-in-css/)
+#### [Wanna Connect ?](https://codemyui.com/pure-css-cartoon-style-angled-button/)
+### [Helped me with the tile drop](https://github.com/ImKennyYip/Connect4)
 ---
