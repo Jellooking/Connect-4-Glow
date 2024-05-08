@@ -1,8 +1,8 @@
-# Jello Escape
+# Connect 4 Glow
 
-## Date: 1/5/2024
+## Date: 5/9/2024
 
-### By: Jasim Khalaf aka Jello :D
+### By: Jasim Khalaf
 
 #### [Insta](https://www.instagram.com/je11ooking/?hl=en) | [GitHub](https://github.com/Jellooking) | [LinkedIn](https://www.linkedin.com/in/jasim-khalaf-516b30302/)
 
