@@ -7,8 +7,7 @@
 #### [Insta](https://www.instagram.com/je11ooking/?hl=en) | [GitHub](https://github.com/Jellooking) | [LinkedIn](https://www.linkedin.com/in/jasim-khalaf-516b30302/)
 
 ---
-![wireframe](https://media.discordapp.net/attachments/1231570964958023720/1235472464671281183/Project_20240502090536.png?ex=66347ee5&is=66332d65&hm=eae29ed1a8b6284b55cf0b7b82ca43b7949866fec8a0b8006ce7f79aded84383&=&format=webp&quality=lossless&width=645&height=394)
-![thegame](https://media.discordapp.net/attachments/1231570964958023720/1235472465241571338/Project_20240502090541.png?ex=66347ee5&is=66332d65&hm=b9feeb8b80c4ec08e8e2d1253434f743de0134dc2d0d7f2562e3126239078d4b&=&format=webp&quality=lossless&width=645&height=394)
+![gameplay](https://media.discordapp.net/attachments/852994610950832140/1237882385782280294/Untitledvideo-MadewithClipchamp-ezgif.com-video-to-gif-converter.gif?ex=663d434f&is=663bf1cf&hm=bb0813be91f8fa5a30e14b417651555a21f551666dbec8940560d2ad8049b006&=)
 ---
 
 ### **_Objective_**
