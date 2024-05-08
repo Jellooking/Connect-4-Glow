@@ -43,4 +43,5 @@
 ##### [Glowing Connect](https://codemyui.com/flickering-light-text-animation-in-css/)
 #### [Wanna Connect ?](https://codemyui.com/pure-css-cartoon-style-angled-button/)
 ### [Helped me with the tile drop](https://github.com/ImKennyYip/Connect4)
+## [SPECIAL SHOUTOUT](https://developer.mozilla.org/en-US/)
 ---
