@@ -55,6 +55,14 @@ function checkWinner() {
         player === boardArray[i][j + 2] &&
         player === boardArray[i][j + 3]
       ) {
+        // Add animation to announce the winner
+        const winnerCells = [
+          board.children[i * columns + j],
+          board.children[i * columns + j + 1],
+          board.children[i * columns + j + 2],
+          board.children[i * columns + j + 3]
+        ]
+        animateWinner(winnerCells)
         return true
       }
     }
@@ -189,6 +197,15 @@ function handleClick(row, col) {
 // Event listener for the reset button to be clickable :D
 const resetButton = document.getElementById('reset-button')
 resetButton.addEventListener('click', resetGame)
+
+//A drippy animation to show who and where the player WON
+function animateWinner(winnerCells) {
+  winnerCells.forEach((cell, index) => {
+    setTimeout(() => {
+      cell.classList.add('winner')
+    }, 200 * index)
+  })
+}
 
 // Starting the game
 createBoard()
