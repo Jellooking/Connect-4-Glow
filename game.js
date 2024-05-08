@@ -8,17 +8,16 @@ let player2Score = 0
 const board = document.getElementById('board')
 const message = document.getElementById('message')
 
-// A function that creates the whole board
+// A function that creates the whole board basically
 function createBoard() {
-  //Empties out the board
   board.innerHTML = ''
 
-  //resets the board arrays from existance
+  // Resets the board arrays from existence
   boardArray = Array(rows)
     .fill(null)
     .map(() => Array(columns).fill(0))
 
-  // Create the tokens
+  // Creates the tokens
   for (let i = 0; i < rows; i++) {
     for (let j = 0; j < columns; j++) {
       const cell = document.createElement('div')
@@ -43,7 +42,7 @@ function isBoardFull() {
 
 // Check who won the match
 function checkWinner() {
-  // Check horizontally for avalability
+  // Check horizontally for availability
   for (let i = 0; i < rows; i++) {
     for (let j = 0; j <= columns - 4; j++) {
       const player = boardArray[i][j]
@@ -68,7 +67,7 @@ function checkWinner() {
     }
   }
 
-  // Check vertically for avalability
+  // Check vertically for availability
   for (let i = 0; i <= rows - 4; i++) {
     for (let j = 0; j < columns; j++) {
       const player = boardArray[i][j]
@@ -85,7 +84,7 @@ function checkWinner() {
     }
   }
 
-  // Check diagonally for avalability (top left to bottom right)
+  // Check diagonally for availability (top left to bottom right)
   for (let i = 0; i <= rows - 4; i++) {
     for (let j = 0; j <= columns - 4; j++) {
       const player = boardArray[i][j]
@@ -102,7 +101,7 @@ function checkWinner() {
     }
   }
 
-  // Check diagonally for avalability (top right to bottom left)
+  // Check diagonally for availability (top right to bottom left)
   for (let i = 0; i <= rows - 4; i++) {
     for (let j = 3; j < columns; j++) {
       const player = boardArray[i][j]
@@ -130,7 +129,7 @@ function resetGame() {
     }
   }
 
-  // Remove player classes from cells////////////////
+  // Remove player classes from cells
   const cells = board.getElementsByClassName('cell')
   Array.from(cells).forEach((cell) => {
     cell.classList.remove('player1', 'player2')
