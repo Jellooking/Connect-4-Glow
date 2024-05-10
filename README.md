@@ -1,47 +1,57 @@
-# Jello Escape
+# Connect 4 Glow
 
-## Date: 1/5/2024
+## Date: 5/9/2024
 
-### By: Jellooking :D
+### By: Jasim Khalaf
 
 #### [Insta](https://www.instagram.com/je11ooking/?hl=en) | [GitHub](https://github.com/Jellooking) | [LinkedIn](https://www.linkedin.com/in/jasim-khalaf-516b30302/)
 
 ---
 
+## ![gameplay](https://media.discordapp.net/attachments/852994610950832140/1237882385782280294/Untitledvideo-MadewithClipchamp-ezgif.com-video-to-gif-converter.gif?ex=663d434f&is=663bf1cf&hm=bb0813be91f8fa5a30e14b417651555a21f551666dbec8940560d2ad8049b006&=)
+
 ### **_Objective_**
 
-#### Guide the slime through a hazardous environment filled with obstacles and keep it alive for as long as possible.
+#### First to connect 4 wins
 
 ---
 
 ### **_Gameplay_**
 
-- Controls: Use the arrow keys or mouse to move the slime.
-- Obstacles: The game world is filled with various obstacles such as spikes, moving platforms, falling objects, and enemies. The slime must avoid touching these obstacles to survive.
-- Power-ups: Occasionally, power-ups like speed boosts or temporary invincibility can appear to help the slime navigate through difficult sections.
-- Scoring: The score increases as the slime survives longer. Consider implementing a leaderboard to encourage competition among players.
-- Difficulty: The game can gradually increase in difficulty by introducing faster obstacles or more complex level designs as the player progresses.
+- Click on the column to place a tile
+- Challenge your opponent to connect 4 tokens first
 
 ---
 
 ### **_Visuals and Audio_**
 
-- Visuals: Use colorful and vibrant graphics to depict the slime and the environment. Consider using different themes or backgrounds to add variety.
-
-- Audio: Add background music that matches the game's theme and sound effects for actions like jumping, collecting power-ups, or colliding with obstacles.
+- Visuals: Simple and Clean
 
 ---
 
 ### **_Level Design_**
 
-- Design levels with increasing complexity and introduce new obstacles and challenges as the player advances.
+- Glowing
+- Dark themed
 
-- Create narrow passages, moving platforms, and tight spaces to add difficulty and test the player's agility.
+---
+
+### **_Pseudocode_**
+
+- Placing tiles by a single click
+- Player score that escalates
+- A slick looking border
+
+---
 
 ### **_Credits_**
 
-##### ~Yet to be determind
+##### [Glowing Connect](https://codemyui.com/flickering-light-text-animation-in-css/)
 
-#### no promises cause I might change a lot lol
+#### [Wanna Connect ?](https://codemyui.com/pure-css-cartoon-style-angled-button/)
+
+### [Helped me with the tile drop](https://github.com/ImKennyYip/Connect4)
+
+## [SPECIAL SHOUTOUT](https://developer.mozilla.org/en-US/)
 
 ---
